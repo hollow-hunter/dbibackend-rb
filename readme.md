@@ -14,5 +14,5 @@ bundle install
 ```
 2. Run the script passing the path to your games directory
 ```
-bundle exec backend.rb games/
+bundle exec ruby backend.rb games/
 ```
