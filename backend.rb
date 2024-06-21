@@ -36,14 +36,14 @@ class UsbContext
   def read(data_size, timeout = 0)
     result = ''
     @dev.open_interface(0) do |handle|
-      result = handle.bulk_transfer({endpoint: @in, dataIn: data_size, timeout: timeout})
+      result = handle.bulk_transfer(endpoint: @in, dataIn: data_size, timeout: timeout)
     end
     result
   end
 
   def write(data, timeout = 0)
     @dev.open_interface(0) do |handle|
-      handle.bulk_transfer({endpoint: @out, dataOut: data, timeout: timeout})
+      handle.bulk_transfer(endpoint: @out, dataOut: data, timeout: timeout)
     end
   end
 end
