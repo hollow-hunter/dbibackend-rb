@@ -2,7 +2,7 @@ DBI backend (in Ruby)
 ===
 
 Computer server for games installation into Nintendo Switch.    
-It's basically a Ruby version of the [original DBI backend made in python](https://github.com/lunixoid/dbibackend).
+It's basically a Ruby version of the [original DBI backend made in python](https://github.com/rashevskyv/dbi).
 
 # Requirements
 - Ruby 3.x
